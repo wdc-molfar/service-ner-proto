@@ -1,7 +1,7 @@
 {
-  "name": "service-ner-proto",
+  "name": "@molfar/service-ner-ru",
   "version": "1.0.0",
-  "description": "named Entity Recognition Molfar Service (proto)",
+  "description": "Named Entity Recognition for Russian Language Molfar Service",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

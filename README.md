@@ -1,2 +1,2 @@
-# service-ner-proto
-named Entity Recognition Molfar Service (proto)
+# service-ner-ru
+Named Entity Recognition for Russian Language Molfar Service
