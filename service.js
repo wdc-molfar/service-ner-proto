@@ -1,6 +1,7 @@
 const { ServiceWrapper } = require("@molfar/csc")
 const { AmqpManager, Middlewares } = require("@molfar/amqp-client")
 const { extend } = require("lodash")
+const path = require("path")
 
 
 const NER = require("./src/javascript/bridge")
@@ -8,7 +9,8 @@ const NER = require("./src/javascript/bridge")
      mode: 'text',
      encoding: 'utf8',
      pythonOptions: ['-u'],
-     pythonPath: (process.env.NODE_ENV && process.env.NODE_ENV == "production") ? 'python' : 'python.exe'
+     pythonPath: (process.env.NODE_ENV && process.env.NODE_ENV == "production") ? 'python' : 'python.exe',
+     args: path.resolve(__dirname,"./MITIE-models/model.dat")	
  }
 
  const extractor = new NER(config)
