@@ -33,12 +33,12 @@ service:
             url:
                 type: string
                 format: uri-reference
-
+    name: NER-RU            
     consume:
         amqp: 
             $ref: "#/service/config/amqp"
         queue:
-            name: processed_messages
+            name: processed_messages_ru
             exchange:
                 name: processed_messages
                 mode: fanout
