@@ -1,5 +1,5 @@
 {
-  "name": "@molfar/service-ner-uk",
+  "name": "@molfar/service-ner-ru",
   "version": "1.0.0",
   "description": "Named Entity Recognition for Russian Language",
   "main": "index.js",
