@@ -62,7 +62,7 @@ fs.mkdtemp(path.join(os.tmpdir(), 'MITIE-'))
 	.then(() => {
 		// if( config.service.mode == "development"){
 			console.log("Install MITIE package")
-			let installer = require('execa')("pip", "install -r requirements.txt".split(" "))
+			let installer = require('execa')("pip3", "install -r requirements.txt".split(" "))
 			let stream = installer.stdout;
 		    stream.pipe(process.stdout);
 			return installer
